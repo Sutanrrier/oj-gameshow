@@ -15,11 +15,11 @@ html {
 
 .ojCardTitle {
     padding: 1rem;
-    margin: 1rem;
+
     background-color: coral;
     text-align: center;
     font-size: 1.5rem;
-    width: 8rem;
+    width: 7rem;
     border: 0.1rem solid #fff;
     border-radius: 0.5rem;
 }
@@ -28,4 +28,15 @@ html {
     background-color: gold;
     cursor: pointer;
     transition: all ease 0.1s;
+}
+
+.oj-pontuacao-title {
+    font-size: 2rem;
+}
+
+.oj-game-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }

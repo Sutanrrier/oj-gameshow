@@ -1,7 +1,10 @@
 import CardButton from "../components/CardButton";
+import Sidebar from "../components/Sidebar";
+import Box from "@mui/material/Box";
+import { Grid } from "@mui/material";
 
 function App() {
-  const questions = [
+  const questoes = [
     { id: 1, categoria: "TRIVIA" },
     { id: 2, categoria: "TRIVIA" },
     { id: 3, categoria: "TRIVIA" },
@@ -29,14 +32,26 @@ function App() {
   ];
 
   return (
-    <div>
-      <h1 className="oj-title">100% OJ GAMESHOW</h1>
-      <div className="oj-questions-panel">
-        {questions.map((elemento) => {
-          return <CardButton id={elemento.id} categoria={elemento.categoria} />;
-        })}
-      </div>
-    </div>
+    <Box sx={{ display: "flex", marginLeft: 5 }}>
+      <Sidebar />
+      <Box component="main">
+        <h1 className="oj-game-title">100% OJ GAMESHOW</h1>
+        <Grid
+          spacing={4}
+          container
+          columns={{ xs: 8, sm: 8, md: 8 }}
+          columnSpacing={2}
+        >
+          {questoes.map((questao) => {
+            return (
+              <Grid item md={1} key={questao.id}>
+                <CardButton id={questao.id} />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
+    </Box>
   );
 }
 
