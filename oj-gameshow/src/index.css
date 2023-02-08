@@ -15,7 +15,6 @@ html {
 
 .ojCardTitle {
     padding: 1rem;
-
     background-color: coral;
     text-align: center;
     font-size: 1.5rem;
@@ -39,4 +38,22 @@ html {
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 4rem;
+}
+
+.oj-jogador-hud {
+    margin: 0 0 0 1rem;
+    font-size: 1.2rem;
+    font-family: Verdana, sans-serif;
+}
+
+.oj-add-pontos-icon:hover {
+    color: gold;
+    cursor: pointer;
+    transition: 0.1s ease all;
+}
+
+.oj-remove-pontos-icon:hover {
+    color: salmon;
+    cursor: pointer;
+    transition: 0.1s ease all;
 }
