@@ -55,7 +55,11 @@ function ModalFilho(props) {
             style={props.categoria === "TRIVIA" ? { display: "none" } : null}
             src={!dicaOpen ? props.pergunta : props.dica}
           />
-          <button className="oj-questao-botao" onClick={handleDicaOpen}>
+          <button
+            style={dicaOpen ? { display: "none" } : null}
+            className="oj-questao-botao"
+            onClick={handleDicaOpen}
+          >
             Revelar Dica
           </button>
           <button className="oj-questao-botao" onClick={handleClose}>

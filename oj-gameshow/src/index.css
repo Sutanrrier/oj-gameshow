@@ -13,9 +13,16 @@ html {
     color: #fff;
 }
 
+.active-color {
+    background-color: coral;
+}
+
+.disabled-color {
+    background-color: crimson;
+}
+
 .ojCardTitle {
     padding: 1rem;
-    background-color: coral;
     text-align: center;
     font-size: 1.5rem;
     width: 7rem;
