@@ -11,6 +11,8 @@ function ModalFilho(props) {
     width: 1100,
     bgcolor: "#f4a460",
     p: 4,
+    borderRadius: "1rem",
+    border: "0.5rem solid white",
   };
   const [open, setOpen] = useState(false);
   const [dicaOpen, setDicaOpen] = useState(false);
@@ -28,7 +30,11 @@ function ModalFilho(props) {
 
   return (
     <>
-      <button className="oj-questao-botao" onClick={handleOpen}>
+      <button
+        style={props.categoria == "HERÓI MUSICAL" ? { display: "none" } : null}
+        className="oj-questao-botao"
+        onClick={handleOpen}
+      >
         Revelar Pergunta
       </button>
       <Modal hideBackdrop open={open} onClose={handleClose}>
@@ -52,7 +58,13 @@ function ModalFilho(props) {
           </p>
           <img
             className="oj-questao-personagem"
-            style={props.categoria === "TRIVIA" ? { display: "none" } : null}
+            style={
+              props.categoria === "TRIVIA"
+                ? { display: "none" }
+                : props.categoria === "EXPLORADOR DE MAPAS"
+                ? { width: "40rem" }
+                : null
+            }
             src={!dicaOpen ? props.pergunta : props.dica}
           />
           <button

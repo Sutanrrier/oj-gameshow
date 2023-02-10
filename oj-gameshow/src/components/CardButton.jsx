@@ -5,7 +5,12 @@ function CardButton(props) {
 
   return (
     <div>
-      <div className={classes}>{props.id}</div>
+      <div
+        style={!props.isRodada2 && props.id > 24 ? { display: "none" } : null}
+        className={classes}
+      >
+        {props.id}
+      </div>
     </div>
   );
 }
