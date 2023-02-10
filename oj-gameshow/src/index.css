@@ -48,19 +48,38 @@ html {
 }
 
 .oj-jogador-hud {
+    display: flex;
+    flex: 4;
     margin: 0 0 0 1rem;
     font-size: 1.2rem;
     font-family: Verdana, sans-serif;
 }
 
+.oj-jogador-avatar {
+    display: flex;
+    flex: 1;
+    width: 3.5rem;
+    margin: 0 0rem 0 0.5rem;
+}
+
+.oj-add-pontos-icon {
+    display: flex;
+    flex: 1;
+}
+
+.oj-remove-pontos-icon {
+    display: flex;
+    flex: 1;
+}
+
 .oj-add-pontos-icon:hover {
-    color: gold;
+    color: chartreuse;
     cursor: pointer;
     transition: 0.1s ease all;
 }
 
 .oj-remove-pontos-icon:hover {
-    color: salmon;
+    color: crimson;
     cursor: pointer;
     transition: 0.1s ease all;
 }
@@ -84,8 +103,6 @@ html {
     font-size: 1rem;
     color: #000;
     text-decoration: none;
-    padding: 1rem;
-    margin: 1rem auto;
     border-radius: 1rem;
     border: 0px;
     width: 12rem;

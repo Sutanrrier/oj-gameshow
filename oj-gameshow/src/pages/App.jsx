@@ -286,7 +286,7 @@ function App() {
   };
 
   return (
-    <Box sx={{ display: "flex", margin: "2rem 4rem 1rem 4rem" }}>
+    <Box sx={{ display: "flex", margin: "2rem 2rem 0 2rem" }}>
       <Sidebar />
       <Box component="main">
         <h1 className="oj-game-title">100% OJ GAMESHOW</h1>
