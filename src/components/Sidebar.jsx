@@ -14,18 +14,18 @@ import Lulu from "../images/Lulu.png";
 import Maynie from "../images/Maynie.png";
 import Mei from "../images/mei.png";
 import NoName from "../images/noname.png";
-import Sora from "../images/Sora.png";
+import Peat from "../images/Peat.png";
 
 function Sidebar() {
   const [jogadores, setJogadores] = useState([
-    { id: 1, nome: "Hakuki", pontos: 0, avatar: Alicia },
+    { id: 1, nome: "Mr. Rogers", pontos: 0, avatar: Lulu },
     { id: 2, nome: "Rafa Pato", pontos: 0, avatar: Mei },
     { id: 3, nome: "iLoveRio", pontos: 0, avatar: Gerente },
     { id: 4, nome: "O Pucca", pontos: 0, avatar: NoName },
     { id: 5, nome: "Fry", pontos: 0, avatar: Maynie },
     { id: 6, nome: "Vagner", pontos: 0, avatar: Ceoreparque },
-    { id: 7, nome: "Mr. Rogers", pontos: 0, avatar: Lulu },
-    { id: 8, nome: "Voltjedi", pontos: 0, avatar: Sora },
+    { id: 7, nome: "Hakuki", pontos: 0, avatar: Alicia },
+    //{ id: 8, nome: "Endmin0", pontos: 0, avatar: Peat },
   ]);
 
   function handleAddPointClick(id) {

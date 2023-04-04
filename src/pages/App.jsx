@@ -125,7 +125,7 @@ function App() {
     {
       id: 15,
       categoria: "TRIVIA",
-      pergunta: "Quantos personagens podem fazer apenas norma de star?",
+      pergunta: "Quais os personagens podem fazer apenas norma de star?",
       dica: "São 2 personagens.",
       ativo: true,
     },
